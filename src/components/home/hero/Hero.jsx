@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react"
-import { hero } from "../../../dummyData"
 import "./hero.css"
 import Card from "./Card"
 import axios from "axios";
