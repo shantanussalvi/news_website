@@ -7,7 +7,7 @@ import Heading from "../heading/Heading";
 const Culture = () => {
 const [data, setData] = useState([])
   useEffect(() => {
-    axios.get("https://newsapi.org/v2/top-headlines?country=in&pageSize=4&category=health&apiKey=aa3cec767e234dcca4fbd1aae984eeaf").then((res) => {
+    axios.get("https://newsapi.org/v2/top-headlines?pageSize=4&category=health&apiKey=aa3cec767e234dcca4fbd1aae984eeaf").then((res) => {
       console.log(res);
       setData(res.data.articles);
     })
@@ -15,7 +15,7 @@ const [data, setData] = useState([])
   return (
     <>
     <div className="container">
-      <Heading title={'Trending Cultural News'} />
+      <Heading title={'Cultural News'} />
       <div className='hero'>
         {data.map((value) => {
           return (
