@@ -1,0 +1,20 @@
+.head {
+  cursor: pointer;
+}
+.head .logo img {
+  width: 10vw;
+}
+header {
+  background-color: #000;
+  color: #fff;
+}
+
+.navitem{
+  margin-right: 30px;
+  color: #fff;
+}
+ 
+.navitem a:hover {
+  color: crimson !important;
+  cursor: pointer;
+}
